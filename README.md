@@ -17,6 +17,7 @@
 - Writing and Reading MySQL CLOB Data Type
 
 ## 4. Query Execution
+- Count Records
 - JDBC Select Statement Example
 - JDBC Update and Delete Statement Example
 - Calling MySQL Stored Procedures from JDBC
@@ -26,5 +27,13 @@
 
 ## 6. Export and Import
 - Exporting and importing data between MySQL and File(Json, Excel, CSV)
+
+## 7. MySQL Dictionary
+
+## 8. Spring JDBC
+
+## 9. JDBC Connection Pool
+- HikariCP
+- DBCP
 
 ## References
