@@ -30,6 +30,7 @@ public class CommitAndRollback {
 
             // Commit
             connection.commit();
+
         } catch (Exception e) {
             try {
                 // Rollback
@@ -38,6 +39,9 @@ public class CommitAndRollback {
                 e1.printStackTrace();
             }
             e.printStackTrace();
+
+        } finally {
+            JdbcUtils.closeConnection(connection);
         }
     }
 
