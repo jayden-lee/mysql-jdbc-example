@@ -39,6 +39,7 @@ public class DatabaseMetaDataInfo {
         System.out.println("Product Name : " + databaseMetaData.getDatabaseProductName());               // MySQL
         System.out.println("Database Major Version : " + databaseMetaData.getDatabaseMajorVersion());    // 5
         System.out.println("Database Minor Version : " + databaseMetaData.getDatabaseMinorVersion());    // 7
+        System.out.println("Product Version : " + databaseMetaData.getDatabaseProductVersion());         // 5.7.24
         System.out.println("Driver Name : " + databaseMetaData.getDriverName());                         // MySQL Connection/J
         System.out.println("Driver Major Version : " + databaseMetaData.getDriverMajorVersion());        // 8
         System.out.println("Driver Minor Version : " + databaseMetaData.getDriverMinorVersion());        // 0
