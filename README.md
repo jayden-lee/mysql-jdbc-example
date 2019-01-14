@@ -12,6 +12,7 @@
 
 ## 3. Data Type
 - SQL Data Type vs Java Type
+- Get Column Information from ResultSet MetaData
 - Reading MySQL Spatial Data Type
 - Writing and Reading MySQL BLOB Data Type
 - Writing and Reading MySQL CLOB Data Type
@@ -29,6 +30,13 @@
 - Exporting and importing data between MySQL and File(Json, Excel, CSV)
 
 ## 7. MySQL Dictionary
+- Database
+- User
+- Table
+- View
+- Procedure
+- Function
+- Event
 
 ## 8. Spring JDBC
 
