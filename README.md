@@ -6,7 +6,7 @@
 - Connecting to MySQL via an Encrypted Connection using SSL
 - Connecting to remote MySQL through SSH using Java
 
-## [2. Metadata Database Info](https://github.com/jayden-lee/mysql-jdbc-example/tree/master/src/main/java/com/jayden/study/metadata)
+## [2. Database Metadata Info](https://github.com/jayden-lee/mysql-jdbc-example/tree/master/src/main/java/com/jayden/study/metadata)
 - [Extracting MySQL Database Metadata via JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/DatabaseMetaDataInfo.java)
 - [MySQL Database SQL Keywords](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/SQLKeywords.java)
 
@@ -18,7 +18,7 @@
 - Writing and Reading MySQL CLOB Data Type
 
 ## 4. Query Execution
-- Count Records
+- [Count Records](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/query/CountRecord.java)
 - JDBC Select Statement Example
 - JDBC Update and Delete Statement Example
 - Calling MySQL Stored Procedures from JDBC
