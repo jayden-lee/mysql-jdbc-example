@@ -8,6 +8,7 @@
 
 ## [2. Metadata Database Info](https://github.com/jayden-lee/mysql-jdbc-example/tree/master/src/main/java/com/jayden/study/metadata)
 - [Extracting MySQL Database Metadata via JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/DatabaseMetaDataInfo.java)
+- [MySQL Database SQL Keywords](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/SQLKeywords.java)
 
 ## 3. Data Type
 - SQL Data Type vs Java Type
