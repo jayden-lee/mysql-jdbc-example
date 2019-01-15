@@ -1,6 +1,7 @@
 package com.jayden.study.utils;
 
 import java.sql.*;
+import java.util.Properties;
 
 public final class JdbcUtils {
 
@@ -42,6 +43,14 @@ public final class JdbcUtils {
         }
     }
 
+    public static void loadDriver() throws Exception {
+        try {
+            Class.forName(DRIVER_CLASS_NAME);
+        } catch (ClassNotFoundException e) {
+            throw new Exception("Unable to register driver class", e);
+        }
+    }
+
     /**
      * Get a Connection Instance
      *
@@ -52,13 +61,21 @@ public final class JdbcUtils {
      * @throws Exception
      */
     public static Connection getConnection(String url, String user, String password) throws Exception {
-        try {
-            Class.forName(DRIVER_CLASS_NAME);
-        } catch (ClassNotFoundException e) {
-            throw new Exception("Unable to register driver class", e);
-        }
-
+        loadDriver();
         return DriverManager.getConnection(url, user, password);
+    }
+
+    /**
+     * Get a Connection Instance
+     *
+     * @param url  JDBC URL
+     * @param info Connection Properties
+     * @return Connection
+     * @throws Exception
+     */
+    public static Connection getConnection(String url, Properties info) throws Exception {
+        loadDriver();
+        return DriverManager.getConnection(url, info);
     }
 
     /**
@@ -75,5 +92,32 @@ public final class JdbcUtils {
             throw new Exception("Unable to read database connection metadata", e);
         }
         return databaseMetaData;
+    }
+
+    /**
+     * Retrieving values from ResultSet and Print values
+     *
+     * @param resultSet ResultSet
+     */
+    public static void printResultData(ResultSet resultSet) throws SQLException {
+        ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+
+        int columnCount = resultSetMetaData.getColumnCount();
+
+        // Print column info
+        for (int i = 1; i <= columnCount; i++) {
+            System.out.print(resultSetMetaData.getColumnName(i) + " ");
+        }
+
+        System.out.println();
+
+        // Print row info
+        while (resultSet.next()) {
+            for (int i = 1; i <= columnCount; i++) {
+                System.out.print(resultSet.getString(i) + " ");
+            }
+
+            System.out.println();
+        }
     }
 }
