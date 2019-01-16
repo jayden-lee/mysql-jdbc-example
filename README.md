@@ -1,12 +1,12 @@
 # MySQL JDBC Example
 
-## [1. Connection](https://github.com/jayden-lee/mysql-jdbc-example/tree/master/src/main/java/com/jayden/study/connection)
+## 1. Connection
 - [Connecting to MySQL Using JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/connection/CommonConnection.java)
 - Connection to MysQL Using JDBC Driver with Properties
 - [Connecting to MySQL via an Encrypted Connection using SSL](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/connection/EncryptedConnection.java)
 - Connecting to remote MySQL through SSH using Java
 
-## [2. Database Metadata Info](https://github.com/jayden-lee/mysql-jdbc-example/tree/master/src/main/java/com/jayden/study/metadata)
+## 2. Database Metadata Info
 - [Extracting MySQL Database Metadata via JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/DatabaseMetaDataInfo.java)
 - [MySQL Database SQL Keywords](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/SQLKeywords.java)
 
@@ -25,6 +25,7 @@
 
 ## 5. Transaction
 - [Committing and Rolling Back a Transaction](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/transaction/CommitAndRollback.java)
+- [START TRANSACTION, COMMIT, and ROLLBACK Syntax](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/transaction)
 
 ## 6. Export and Import
 - Exporting and importing data between MySQL and File(Json, Excel, CSV)
