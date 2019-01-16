@@ -17,6 +17,7 @@ public class TransactionIsolation {
     private static Connection connection;
 
     public enum TxIsolationLevel {
+        NONE("NONE", 0),
         READ_UNCOMMITTED("READ UNCOMMITTED", 1),
         READ_COMMITTED("READ COMMITTED", 2),
         REPEATABLE_READ("REPEATABLE READ", 4),
