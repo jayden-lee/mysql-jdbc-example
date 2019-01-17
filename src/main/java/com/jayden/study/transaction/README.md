@@ -50,5 +50,16 @@ COMMIT;
 With <b>START TRANSACTION</b>, autocommit remains disabled until you end the transaction with <b>COMMIT</b> or <b>ROLLBACK</b>.
 The autocommit mode then reverts to its previous state.
 
+# Show Current Active Transaction
+
+```
+SELECT 
+    COUNT(1) AS count
+FROM
+    INFORMATION_SCHEMA.INNODB_TRX
+WHERE
+    trx_mysql_thread_id = CONNECTION_ID();
+```
+
 ## References
 - https://dev.mysql.com/doc/refman/8.0/en/commit.html
