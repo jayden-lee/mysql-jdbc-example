@@ -26,6 +26,7 @@
 ## 5. Transaction
 - [Committing and Rolling Back a Transaction](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/transaction/CommitAndRollback.java)
 - [Transaction Isolation Levels](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/transaction/TransactionIsolation.java)
+- [Show Current Active Transaction](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/transaction/CurrentActiveTransaction.java)
 
 ## 6. Export and Import
 - Exporting and importing data between MySQL and File(Json, Excel, CSV)
