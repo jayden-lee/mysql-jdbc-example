@@ -1,6 +1,6 @@
 # Transaction
 
-# Transaction Isolation Levels
+# 1. Transaction Isolation Levels
 
 - READ UNCOMMITTED
 - READ COMMITTED
@@ -24,7 +24,7 @@ SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;
 <hr>
 
 
-# START TRANSACTION, COMMIT, and ROLLBACK Syntax
+# 2. START TRANSACTION, COMMIT, and ROLLBACK Syntax
 
 These statements provide control over use of transactions:
 
@@ -50,7 +50,9 @@ COMMIT;
 With <b>START TRANSACTION</b>, autocommit remains disabled until you end the transaction with <b>COMMIT</b> or <b>ROLLBACK</b>.
 The autocommit mode then reverts to its previous state.
 
-# Show Current Active Transaction
+<hr>
+
+# 3. Show Current Active Transaction
 
 ```
 SELECT 
