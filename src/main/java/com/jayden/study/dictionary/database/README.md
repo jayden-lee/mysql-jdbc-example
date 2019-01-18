@@ -4,16 +4,16 @@
 
 ## 1.1 Create a Database
 ```
-CREATE DATABASE testdb;
+CREATE DATABASE testdb2;
 ```
 
 ## 1.2 Select a Database
 ```
-USE testdb;
+USE testdb2;
 ```
 
 or
 
 ```
-connection.setSchema("testdb");
+connection.setCatalog("testdb2");
 ```
