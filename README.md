@@ -32,13 +32,21 @@
 - Exporting and importing data between MySQL and File(Json, Excel, CSV)
 
 ## 7. MySQL Dictionary
-- Database
-- User
-- Table
-- View
-- Procedure
-- Function
-- Event
+
+## 7.1 Database
+- [Creating and Selecting a Database](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/dictionary/database/CreateAndSelectDatabase.java)
+
+## 7.2 User
+
+## 7.3 Table
+
+## 7.4 View
+
+## 7.5 Procedure
+
+## 7.6 Function
+
+## 7.7 Event
 
 ## 8. Spring JDBC
 
