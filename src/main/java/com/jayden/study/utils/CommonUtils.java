@@ -5,6 +5,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Random;
 
 public final class CommonUtils {
 
@@ -18,5 +19,9 @@ public final class CommonUtils {
         }
 
         return path;
+    }
+
+    public static Random random() {
+        return new Random(System.currentTimeMillis());
     }
 }

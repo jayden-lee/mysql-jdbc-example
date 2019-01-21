@@ -1,9 +1,11 @@
-# Encrypted Connection
+# Connection
 
-## Prerequisites
+## 1. Encrypted Connection
+
+### 1.1 Prerequisites
 - Certificate and Key File (Certain SSL mode requires certificates and key files)
 
-## SSL Mode and Legacy properties
+### 1.2 SSL Mode and Legacy properties
 | SSL Mode        | Description                                                                                                                       | Legacy Properties                                                    |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | DISABLED        | Establish unencrypted connections                                                                                                 | useSSL = false                                                       |
@@ -14,3 +16,8 @@
 
 > Note that, for ALL server versions, the default setting of "sslMode" is "PREFERRED", and it is equivalent to the legacy settings of "useSSL=true", "requireSSL=false", and "verifyServerCertificate=false".
 The legacy properties are ignored if "sslMode" is set explicitly. If none of "sslMode" or "useSSL" is set explicitly, the default setting of "sslMode=PREFERRED" applies.
+
+## 2. Connecting to remote MySQL through SSH using Java
+
+### 2.1 Prerequisites
+- [JSCH Library](http://www.jcraft.com/jsch/)

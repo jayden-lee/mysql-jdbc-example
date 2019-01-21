@@ -4,7 +4,7 @@
 - [Connecting to MySQL Using JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/connection/CommonConnection.java)
 - Connection to MysQL Using JDBC Driver with Properties
 - [Connecting to MySQL via an Encrypted Connection using SSL](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/connection/EncryptedConnection.java)
-- Connecting to remote MySQL through SSH using Java
+- [Connecting to remote MySQL through SSH using Java](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/connection/SshTunnelConnection.java)
 
 ## 2. Database Metadata Info
 - [Extracting MySQL Database Metadata via JDBC Driver](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/metadata/DatabaseMetaDataInfo.java)
