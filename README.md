@@ -15,7 +15,7 @@
 - Get Column Information from ResultSet MetaData
 - Reading MySQL Spatial Data Type
 - [Writing and Reading MySQL BLOB Data Type](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/datatype/ReadAndWriteBlobData.java)
-- Writing and Reading MySQL CLOB Data Type
+- Writing and Reading MySQL Text Data Type
 
 ## 4. Query Execution
 - [Count Records](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/query/CountRecord.java)
