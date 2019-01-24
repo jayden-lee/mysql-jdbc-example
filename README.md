@@ -12,7 +12,7 @@
 
 ## 3. Data Type
 - SQL Data Type vs Java Type
-- Get Column Information from ResultSet MetaData
+- [Get Column Information from ResultSet MetaData](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/datatype/GetColumnInformation.java)
 - Reading MySQL Spatial Data Type
 - [Writing and Reading MySQL BLOB Data Type](https://github.com/jayden-lee/mysql-jdbc-example/blob/master/src/main/java/com/jayden/study/datatype/ReadAndWriteBlobData.java)
 - Writing and Reading MySQL Text Data Type
