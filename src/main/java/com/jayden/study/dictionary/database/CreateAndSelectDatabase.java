@@ -2,7 +2,9 @@ package com.jayden.study.dictionary.database;
 
 import com.jayden.study.utils.JdbcUtils;
 
+import javax.swing.plaf.nimbus.State;
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -18,7 +20,7 @@ public class CreateAndSelectDatabase {
 
     private static Connection connection;
 
-    private static Type type = Type.JDBC_API;
+    private static Type type = Type.SQL;
 
     public enum Type {
         JDBC_API,
@@ -74,6 +76,16 @@ public class CreateAndSelectDatabase {
     }
 
     private static void printCurrentDatabase() throws SQLException {
-        System.out.println("Current Database: " + connection.getCatalog());
+        String sql = "SELECT DATABASE()";
+        String databaseName = null;
+
+        try (Statement statement = connection.createStatement();
+             ResultSet resultSet = statement.executeQuery(sql)) {
+            if (resultSet.next()) {
+                databaseName = resultSet.getString(1);
+            }
+        }
+
+        System.out.println("Current Database: " + databaseName);
     }
 }
